@@ -1,0 +1,145 @@
+@keyframes slidein {
+    from{margin-top:200%;}
+    to{margin-top:0%;}
+}
+
+
+body{
+    background-image: url("times-square-faster.gif");
+    background-repeat:no-repeat;
+    background-color:whitesmoke;
+    animation-direction: normal;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+h1{
+    color:black;
+    text-align: center;
+    color:white;
+}
+
+h2{
+    color:black;
+    text-align: center;
+    color:white;
+}
+
+p{
+    color:black;
+    text-align: left;
+    font-size: 10px;
+    color:white;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color:white;
+    }
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    color:white;
+    }
+
+.sidenav a:hover {
+    color: yellowgreen;
+    }
+
+.sidenav .closebtn{
+    position: left;
+    top: 0;
+    left: 0px;
+    margin-left: 0px;
+    color:white;
+    }
+
+   
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#WhoamI p{
+    font-size: 20px;
+    color:white;
+}
+
+#WhatIdo p{
+    font-size: 20px;
+    color:white;
+    padding-left:0px;
+}
+
+#WhoamI h2{
+    text-align:left;
+}
+
+#WhatIdo h2{
+    text-align:left;
+}
+
+#contact h2{
+    text-align:left;
+
+}
+
+
+
+
+
+
+
+
+
+
+.intro1 {
+    width: 60ch;
+    animation: typing 3s steps(50), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 20px;
+    
+}
+  
+@keyframes typing {
+    from {
+
+        width:0;   
+    }
+    to {
+    }
+
+}
+      
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+.menu a:link{
+    color: #571083;
+    background-color: transparent;
+    text-decoration: none;
+}
