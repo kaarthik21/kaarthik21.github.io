@@ -17,6 +17,7 @@ body{
     animation-name: slidein;
     color:white;
     scroll-behavior:smooth;
+    background-size: cover;
 }
 
 h1{
