@@ -1,16 +1,21 @@
+html,body{
+  overflow-x: hidden;
+}
+
 .menu {
+  display: flex;
   font-size: 15px;
-  margin-left: 1000px;
-  margin-top: 50px;
+  float: right;
+  margin-top: 30px;
   cursor: pointer;
   position: relative;
   z-index: 1;
 }
 
-@media screen and (max-height: 450px) {
-  .menu {padding-top: 15px;}
-  .menu a {font-size: 18px;}}
-
+.menu > a{
+  font-size: 15px;
+  margin: 10px
+}
 
 @keyframes typing {
     from {
@@ -34,11 +39,7 @@
 }
 
 .area{
-    /*background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    */
     width: 100%;
-    /*height:100vh;
-*/
 }
 
 .circles{
@@ -165,7 +166,6 @@
 .heading {
   font-size: 40px;
   z-index: -1;
-
 }
 
 .main #intro {
@@ -212,6 +212,7 @@ h2{
 /*Fade in and out text for text Development*/
 .development {
   display: inline-block;
+  position: relative;
   font-size: 20px;
   text-decoration: underline;
   float: left;
@@ -230,8 +231,21 @@ h2{
   }
 }
 
+@media only screen and (max-width: 800px){
+  .development {
+    margin-left: 0px;
+  }
+}  
+
+@media only screen and (min-width: 800px) and (max-width: 920px){
+  .development {
+    margin-left: 200px;
+  }
+}  
+
 .hacking {
   display: inline-block;
+  position: relative;
   font-size: 20px;
   text-decoration: underline;
   float: left;
@@ -249,8 +263,22 @@ h2{
     width: 80px;
   }
 }
+
+@media only screen and (max-width: 800px){
+  .hacking {
+    margin-left: 0px;
+  }
+}  
+
+@media only screen and (min-width: 800px) and (max-width: 920px){
+  .hacking {
+    margin-left: 200px;
+  }
+}
+
 .sysad {
   display: inline-block;
+  position: relative;
   font-size: 20px;
   text-decoration: underline;
   float: left;
@@ -269,6 +297,17 @@ h2{
   }
 }
 
+@media only screen and (max-width: 800px){
+  .sysad {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 920px){
+  .sysad {
+    margin-left: 200px;
+  }
+}
 
 /*SLIDING TEXT*/
 
@@ -285,6 +324,12 @@ h2{
   margin-top: 0px;
   position: relative;
   width: 600px;
+}
+
+@media only screen and (max-width: 800px){
+  #slider {
+    margin-left: -100px;
+  }
 }
 
 #slider li{
