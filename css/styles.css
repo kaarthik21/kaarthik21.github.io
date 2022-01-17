@@ -339,6 +339,7 @@ h2{
   width: 600px;
   display: inline-block;
   height: 200px;
+  margin-top:2px;
 }
 
 #slider ul{
@@ -412,7 +413,6 @@ h2{
   -webkit-animation-play-state: paused;
 }
 */
-
 
 
 /*FOOTER*/
